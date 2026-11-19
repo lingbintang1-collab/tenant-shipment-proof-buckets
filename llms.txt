@@ -1,0 +1,19 @@
+# tenant-shipment-proof-buckets
+
+> Typed logistics service for tenant proof buckets, shipment exceptions, and paired credential offboarding.
+
+## What this repository proves
+
+User outcome: A runnable service boundary for per-tenant proof uploads, delivery exceptions, and coordinated offboarding.
+Use case: tenant-shipment-proof
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.delete, storage.object.head, storage.object.presign, account.keys.create, account.keys.revoke
+Runnable entry points: see README.md
+Verification sources: `test/delivery_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

@@ -1,0 +1,24 @@
+{
+  "name": "tenant-shipment-proof-buckets",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/shipment_service.ts",
+    "demo": "tsx scripts/checkout_delivery_demo.ts",
+    "test": "tsx --test test/delivery_decision.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
